@@ -16,6 +16,9 @@ This section should contain a quantitative and qualitative description of the da
  →You can visualize the dataset with Exploratory Data Analysis.ipynb.
    There are various things such as bright images and dark images, but you can see that they are all images taken by the camera mounted on the car traveling on the road.
    In other words, you can see that there are many vehicles that you want to detect in the center and bottom of the image.
+   In addition, the number of each class is shown in the distribution map as Additional EDA.
+   You can see that most of the vehicles are pedestrians, rarely pedestrians, and few cyclists.
+
 #### Cross validation
 This section should detail the cross validation strategy and justify your approach.
  →I split Train_Data, Test_Data and Val_Data into 8: 1: 1.
