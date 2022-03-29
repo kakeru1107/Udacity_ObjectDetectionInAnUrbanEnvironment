@@ -30,13 +30,24 @@ This section should detail the results of the reference experiment. It should in
 
 The result of the Reference experiment is stored in the "chart_before" folder.
 
-・ DetectionBoxes_Precisio  The file name is "Before_1.DetectionBoxes_Precision.png".
+-About data_augmentation_options in pipeline_new.config-
+Two options have already been added to pipeline_new.config.
+The documents I referred to are as follows.
+https://blog.imind.jp/entry/2019/07/20/132143
+・ Random_horizontal_flip
+It is an option to flip horizontally with a 50% chance.
+・ Random_crop_image
+Randomly crop the part of the image other than the rectangle.
+
+
+・ DetectionBoxes_Precision
+The file name is "Before_1.DetectionBoxes_Precision.png".
 Since the plot at 2.5k is interrupted, this time we will compare with Precision at 2k.
 -DetectionBoxes_Precision / mAP 		=.8e-3
--DetectionBoxes_Precision / mAP (larg 	= 7e-4
--DetectionBoxes_Precision / mAP (medi) 	= 0.014
--DetectionBoxes_Precision / mAP (sml) 	= 2.6e-3
--DetectionBoxes_Precision / mAP50IOU 	= 0.012
+-DetectionBoxes_Precision / mAP (large) 	= 7e-4
+-DetectionBoxes_Precision / mAP (medium) 	= 0.014
+-DetectionBoxes_Precision / mAP (small) 	= 2.6e-3
+-DetectionBoxes_Precision / mAP@.50IOU 	= 0.012
 -DetectionBoxes_Precision / mAP@.75IOU 	= 3.7e-3
   
 ・ DetectionBoxes_Recall
